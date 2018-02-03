@@ -1,6 +1,7 @@
-#include <json.hpp>
+#include <iostream>
+#include <nlohmann/json.hpp>
 
-using namespace nlohmann;
+using json = nlohmann::json;
 
 int main()
 {
@@ -15,4 +16,5 @@ int main()
     // serialize with indentation
     std::cout << std::setw(4) << j_object << "\n\n";
     std::cout << std::setw(2) << j_array << "\n\n";
+    std::cout << std::setw(1) << std::setfill('\t') << j_object << "\n\n";
 }

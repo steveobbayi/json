@@ -1,11 +1,12 @@
-#include <json.hpp>
+#include <iostream>
+#include <nlohmann/json.hpp>
 
-using namespace nlohmann;
+using json = nlohmann::json;
 
 int main()
 {
     // create a JSON object
-    json object =
+    const json object =
     {
         {"one", 1}, {"two", 2}, {"three", 2.9}
     };

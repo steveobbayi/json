@@ -1,10 +1,11 @@
-#include <json.hpp>
+#include <iostream>
+#include <nlohmann/json.hpp>
 
-using namespace nlohmann;
+using json = nlohmann::json;
 
 int main()
 {
-    // create a JSON boolean
+    // create a JSON number
     json value = 17;
 
     // explicitly getting pointers
